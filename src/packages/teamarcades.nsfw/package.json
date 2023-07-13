@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      "teamarcades.nsfw@1.0.5-beta",
+      "/home/runner/discordbotlist-2"
+    ]
+  ],
+  "_from": "teamarcades.nsfw@1.0.5-beta",
+  "_id": "teamarcades.nsfw@1.0.5-beta",
+  "_inBundle": false,
+  "_integrity": "sha512-GWBouDIwaneL5iRcHQ4voNMRC8cOSEha/a26fnjfeWKnh0nbTRONXzWq5ltAKYbbCNUF05oswCe7S4Mo7tasYg==",
+  "_location": "/teamarcades.nsfw",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "teamarcades.nsfw@1.0.5-beta",
+    "name": "teamarcades.nsfw",
+    "escapedName": "teamarcades.nsfw",
+    "rawSpec": "1.0.5-beta",
+    "saveSpec": null,
+    "fetchSpec": "1.0.5-beta"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teamarcades.nsfw/-/teamarcades.nsfw-1.0.5-beta.tgz",
+  "_spec": "1.0.5-beta",
+  "_where": "/home/runner/discordbotlist-2",
+  "author": {
+    "name": "K4itrun"
+  },
+  "bugs": {
+    "url": "https://github.com/k4itrun/teamarcades.nsfw/issues"
+  },
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "description": "It is a simple nsfw module, it assigns photos from gif to png in most extensions.",
+  "homepage": "https://github.com/k4itrun/teamarcades.nsfw#readme",
+  "keywords": [
+    "nsfw",
+    "nudity",
+    "pornograhy"
+  ],
+  "license": "MIT",
+  "main": "teamarcades-nsfw.js",
+  "name": "teamarcades.nsfw",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4itrun/teamarcades.nsfw.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.5-beta"
+}

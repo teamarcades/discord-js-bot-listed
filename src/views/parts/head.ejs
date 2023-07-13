@@ -1,0 +1,116 @@
+<%- include('./meta.ejs') %>
+
+ <style>
+.bg-indigo-600 {
+    --tw-bg-opacity: 1;
+    background: linear-gradient(-45deg, #200109, rgb(14 16 21), #000000, #910024);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+</style><!--
+<div class="bg-indigo-600">
+  <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+    <div class="is-flex is-align-items-center justify-content-between is-flex-wrap">
+      <div class="w-0 is-flex-grow-1" style="align-items: center">
+        <span class="is-flex p-2 rounded-lg bg-indigo-600" style="opacity: 0%!important">
+         
+        </span>
+        <p class="ml-3 font-medium text-white truncate">
+          <span>
+            <span class="badge badge-danger is-size-6">EVENT</span>&nbsp;Welcome invite 10 users and we grant you a derified bot.
+          </span>
+        </p>
+      </div>
+      <div class="is-flex justify-content-end">
+        <a href="https://botlist.teamarcades.xyz/dc" class="btn btn-botlist">
+          Join Our Discord
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+        
+<body>
+<div id="loader-wrapper">
+    
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+    
+</div>
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark p-2 pl-4 pr-4 bg-botlist">
+        <div class="container">
+        <a class="navbar-brand logoholder" href="/"><img id="logoimg" style="height:55px; width:55px;" src="../../img/logo.png" alt="TeamArcades"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav mainlink mr-auto">
+            <li class="nav-item">
+              <a class="nav-link nvhome" href="/"><i class="fad fa-home mr-1"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/bots"><i class="fad fa-robot mr-1"></i> Bots</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/certification"><i class="fad fa-badge-check mr-1"></i> Certification</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/partners"><i class="fad fa-handshake mr-1"></i> Partners</a>
+            </li>
+            <% if(user) { %>
+                <% 
+                let guild = bot.guilds.cache.get(config.server.id).members.cache.get(user.id);
+                if(guild) {
+                if(guild.roles.cache.get(roles.owner) || guild.roles.cache.get(roles.moderator)) {
+                %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin"><i class="fad fa-magic mr-1"></i> Admin Panel</a>
+                </li>
+                <% }} %>
+            <% } %>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <% if(user) {%>
+              <li class="nav-item dropdown">
+                  <a class="nav-link btn btn-tag dropdown-toggle has-text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="https://cdn.discordapp.com/avatars/<%=user.id%>/<%=user.avatar%>" class="nav-userProfile-image"/><b><%=user.username%></b><small>#<%=user.discriminator%></small>
+                  </a>
+                <div class="dropdown-menu dropdown-menu-right animate slideIn" style="max-width:220px!important;">
+                    <a class="dropdown-item" href="/user/<%=user.id %>/"><i class="fa fa-id-card mr-2"></i> Profile</a>
+                    <a class="dropdown-item" href="/addbot"><i class="fa fa-paper-plane mr-2"></i> Submit Bot</a>
+                    <a class="dropdown-item" href="/codes"><i class="fa fa-code mr-2"></i> Code Share</a>
+                    <a class="dropdown-item" href="/uptime/links"><i class="fa fa-sync-alt mr-2"></i> Uptime</a>
+                  
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item dropdown-danger" href="/logout"><i class="fad fa-sign-out mr-2"></i> Logout</a>
+                </div>
+              </li>
+            <% } else { %>
+            <li class="nav-item">
+                <a class="btn btn-tag" href="/login"><i class="fab fa-discord"></i> Login</a>
+            </li>
+	    <% } %>
+          </ul>
+        </div>
+        </div>
+      </nav>
+    
+  
+<%
+let imgBack = "https://i.hizliresim.com/2sdunq.png";
+%>

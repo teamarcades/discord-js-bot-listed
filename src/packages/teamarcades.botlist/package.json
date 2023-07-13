@@ -1,0 +1,63 @@
+{
+  "_args": [
+    [
+      "teamarcades.botlist@1.0.1-renewed",
+      "/home/runner/discordbotlist-2"
+    ]
+  ],
+  "_from": "teamarcades.botlist@1.0.1-renewed",
+  "_id": "teamarcades.botlist@1.0.1-renewed",
+  "_inBundle": false,
+  "_integrity": "sha512-aSbRlimO77yTxOr8BU8DscMciY7Pc2BO+08RCvxhynyAXW2qrcB8N+0e5lGBQtxEgzeI0NTGvTbcFZzzdu8zjA==",
+  "_location": "/teamarcades.botlist",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "teamarcades.botlist@1.0.1-renewed",
+    "name": "teamarcades.botlist",
+    "escapedName": "teamarcades.botlist",
+    "rawSpec": "1.0.1-renewed",
+    "saveSpec": null,
+    "fetchSpec": "1.0.1-renewed"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teamarcades.botlist/-/teamarcades.botlist-1.0.1-renewed.tgz",
+  "_spec": "1.0.1-renewed",
+  "_where": "/home/runner/discordbotlist-2",
+  "author": {
+    "name": "K4itrun"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.1"
+  },
+  "description": "A official botlist.teamarcades.xyz api.",
+  "keywords": [
+    "bot",
+    "list",
+    "discord",
+    "dbl",
+    "vcodes",
+    "api",
+    "bots",
+    "vote",
+    "check",
+    "vote",
+    "control",
+    "force",
+    "vote"
+  ],
+  "license": "MIT",
+  "main": "teamarcades-botlist.js",
+  "name": "teamarcades.botlist",
+  "repository": {
+    "type": "git",
+    "url": "github.com/k4itrun/teamarcades.botlist"
+  },
+  "scripts": {
+    "test": "!vote"
+  },
+  "version": "1.0.1-renewed"
+}

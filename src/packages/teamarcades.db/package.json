@@ -1,0 +1,57 @@
+{
+  "_args": [
+    [
+      "teamarcades.db@1.0.5",
+      "/home/runner/discordbotlist-2"
+    ]
+  ],
+  "_from": "teamarcades.db@1.0.5",
+  "_id": "teamarcades.db@1.0.5",
+  "_inBundle": false,
+  "_integrity": "sha512-AD4Yx5Y++Wd83OGVL7Bje1ff6izp0H/aXh9PK/wgF/b1ndlIJOxww1LWxxKXu97BVrPHzDXhSOyej0KDKNt1Lw==",
+  "_location": "/teamarcades.db",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "teamarcades.db@1.0.5",
+    "name": "teamarcades.db",
+    "escapedName": "teamarcades.db",
+    "rawSpec": "1.0.5",
+    "saveSpec": null,
+    "fetchSpec": "1.0.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/teamarcades.db/-/teamarcades.db-1.0.5.tgz",
+  "_spec": "1.0.5",
+  "_where": "/home/runner/discordbotlist-2",
+  "author": {
+    "name": "System_69 & K4itrun"
+  },
+  "bugs": {
+    "url": "https://github.com/k4itrun/teamarcades.db/issues"
+  },
+  "dependencies": {},
+  "description": "It is a JSON based data logging module.",
+  "homepage": "https://github.com/k4itrun/teamarcades.db#readme",
+  "keywords": [
+    "database",
+    "db",
+    "json",
+    "jsondata",
+    "fs",
+    "databases",
+    "jsonfolder",
+    "dbase",
+    "datab"
+  ],
+  "license": "MIT",
+  "main": "teamarcades-db.js",
+  "name": "teamarcades.db",
+  "repository": {
+    "url": "git+https://github.com/k4itrun/teamarcades.db.git"
+  },
+  "version": "1.0.5"
+}
